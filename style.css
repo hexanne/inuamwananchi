@@ -1,0 +1,157 @@
+body {
+margin:0;
+}
+
+.head {
+position:fixed;
+height:10%;
+width:100%;
+color:#008000;
+background:#f0f0f0;
+z-index:2;
+border-bottom:1px solid #008000;
+}
+
+.head>h2 {
+position:absolute;
+left:10%;
+color:#008000;
+}
+
+.container {
+width:100%;
+height:70%;
+top:15%;
+background:#ffffff;
+position:absolute;
+}
+
+.content {
+margin:5%;
+width:90%;
+height:90%;
+color:#008000;
+}
+
+.content>.btn {
+width:100%;
+height:5%;
+border:none;
+background:#008000;
+margin:.5pc 0;
+color:#ffffff;
+font-size:100%;
+border-radius:12px;
+}
+
+.content>.btn:active {
+background:#ffffff;
+color:#008000;
+}
+
+#loanContent,#fundsContent,#termsContent {
+width:100%;
+position:relative;
+height:0%;
+background:#ffffff;
+transition-duration:1s;
+overflow:hidden;
+}
+
+#loanContent>.btn,#fundsContent>.btn,#termsContent>.btn {
+width:100%;
+height:11%;
+box-shadow:2px 2px 12px 2px solid #000000;
+background:#008000;
+margin:.5pc 0;
+color:#ffffff;
+font-size:100%;
+border-radius:12px;
+}
+
+#loanContent>.btn:active,#fundsContent>.btn:active,#termsContent>.btn:active {
+background:#ffffff;
+color:#008000;
+}
+
+li {
+margin:5% 0;
+}
+
+.holder {
+width:100%;
+position:absolute;
+height:50%;
+display:grid;
+top:20%;
+place-content:center;
+}
+
+.loader {
+width:11.5pc;
+height:11.5pc;
+border-radius:50%;
+border-bottom:13px solid #008000;
+border-right:13px solid #008000;
+border-left:13px solid #008000;
+border-top:13px solid #ffffff;
+position:absolute;
+top:27.5%;
+left:27.8%;
+}
+
+.inner {
+width:10pc;
+height:10pc;
+position:absolute;
+top:30%;
+left:30%;
+border-radius:50%;
+border-bottom:13px solid #008000;
+border-right:13px solid #008000;
+border-left:13px solid #008000;
+border-top:13px solid #ffffff;
+}
+
+
+#lll {
+animation:lft 1s linear infinite;
+}
+
+#rrr {
+animation:rgt 1s linear infinite;
+}
+
+@keyframes lft{
+100% {
+transform:rotate(360deg);
+}
+}
+
+@keyframes rgt {
+100% {
+transform:rotate(-360deg);
+}
+}
+
+
+.nav-icon {
+position:absolute;
+top:45%;
+right:10%;
+}
+
+.nav-menu {
+height:100%;
+position:absolute;
+right:0;
+background:#f0f0f0;
+z-index:3;
+overflow:hidden;
+}
+
+#navv {
+width:0%;
+transition-duration:2s;
+}
+
